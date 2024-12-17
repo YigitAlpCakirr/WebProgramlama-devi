@@ -166,10 +166,18 @@ textarea::-ms-input-placeholder {
 }
 
 .sutun-sol-sag{
-    width: 385px;
+    width: 400px;
     float: left;
     padding: 50px;
-    background-color: #006666;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: auto;
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
+}
+.sutun-sol-sag:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+    cursor: pointer; 
 }
 
 .oval{
@@ -178,13 +186,14 @@ textarea::-ms-input-placeholder {
 }
 
 .ekipisim{
-    color: white;
+    color: rgb(255, 119, 0);
     font-size: 50px;
     margin-bottom: 12px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .ekipp{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: 25px ;
 }
@@ -192,13 +201,178 @@ textarea::-ms-input-placeholder {
 
 .ekiph3{
     font-size: 60px;
-    color: rgb(81, 14, 14);
     text-align: center;
     margin: 50px;
-    background-color: white;
-    
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .pclass{
     font-size: 20px;
+}
+
+.simge-link i {
+    font-size: 30px; 
+    color: #6c7277; 
+    transition: color 0.3s ease; 
+}
+
+.simge-link i:hover {
+    color: #2a9115; 
+    cursor: pointer; 
+}
+
+.simge-link {
+    text-decoration: none;
+}
+
+
+.sepet-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.sepet-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sepet-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+    max-width: 70%;
+}
+
+.item-info h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: #444;
+}
+
+.item-info p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sepet-footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sepet-footer label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sepet-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sepet-button:hover {
+    background-color: #0056b3;
+}
+
+.total-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .sepet-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+.sepet-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.remove-container {
+    margin-left: 10px;
+}
+
+.remove-item {
+    background-color: #f3746b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #ef0b07;
+}
+
+#tarih, #saat {
+    width: 100%;
+    max-width: 250px; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+
+.sepet-footer .sepet-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f59e0b; 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.sepet-footer .sepet-button:hover {
+    background-color: #d97706; /* Hover durumunda daha koyu turuncu */
+}
+
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
 }
