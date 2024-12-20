@@ -381,3 +381,31 @@ textarea::-ms-input-placeholder {
 
 
 
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Mavi buton */
+    color: #fff; /* Beyaz yazı */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3; /* Daha koyu mavi */
+  }
+  
+  
+
+
+
+
+

@@ -43,6 +43,7 @@ function sepetiGuncelle() {
     });
 }
 
+
 // Sepete ürün ekleme işlevi
 function sepeteEkle(name, price) {
     sepet.push({ name, price });
