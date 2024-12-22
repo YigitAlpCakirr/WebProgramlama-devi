@@ -28,7 +28,7 @@
                     <li class="inline-block mb-4 mx-4"><a href="#sepet" class="tm-text-gold py-1 md:py-3 px-4"><i class="fa-solid fa-cart-shopping"></i>Sepet</a></li>
                 </ul>
                 <div class="navbar">
-                    <a href="login.html" class="login-btn">Giriş Yap</a>
+                    <a href="login.html" class="login-btn">Çıkış Yap</a>
                   </div>
             </div>           
         </nav>
@@ -227,6 +227,46 @@
             </div>
         </div>        
     </div>  
+    <div id="sepet" class="parallax-window relative" data-parallax="scroll" data-image-src="img/kuaförfoto6.jpg">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <div class="sepet-container">
+                        <h2 class="text-2xl font-bold mb-4">Sepetiniz</h2>
+                        <!-- Sepet ürünlerinin ekleneceği alan -->
+                        <div class="sepet-urunler">
+                            <!-- Dinamik ürünler buraya eklenecek -->
+                        </div>
+    
+                        <!-- Tarih ve saat seçimi -->
+                        <div class="sepet-footer mt-6">
+                            <div class="flex flex-col mb-4">
+                                <label for="tarih" class="font-semibold">Teslimat Tarihi:</label>
+                                <input type="date" id="tarih" name="tarih" class="px-4 py-2 rounded-md border border-gray-300">
+                            </div>
+                            <div class="flex flex-col mb-4">
+                                <label for="saat" class="font-semibold">Teslimat Saati:</label>
+                                <select id="saat" class="px-4 py-2 rounded-md border border-gray-300">
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+    
+                            <button class="sepet-button bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600">Satın Al</button>
+                            <span class="total-price text-lg font-semibold ml-4">Toplam: ₺0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script>
   document.querySelector('.login-btn').addEventListener('click', function (e) {
@@ -238,6 +278,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/sepet.js"></script>
     <script src="js/login.js"></script>
     <script>
 
