@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sign.in.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Giriş Yap</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password" name="password" placeholder="Şifrenizi girin" required>
+                </div>
+                <button type="submit" class="login-btn">Giriş Yap</button>
+                <button type="button" class="login-btn" onclick="window.location.href='index.html';">Anasayfa'ya Geri Dön</button>
+                <p class="signup-link">
+                    Hesabınız yok mu? <a href="#" id="signupLink">Kayıt Ol</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Kaydolma Formu -->
+    <div class="signup-container" style="display: none;">
+        <div class="signup-card">
+            <h2>Hesap Oluştur</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="newUsername">Kullanıcı Adı</label>
+                    <input type="text" id="newUsername" name="newUsername" placeholder="Yeni kullanıcı adınızı girin" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Şifre</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Yeni şifrenizi girin" required>
+                </div>
+                <button type="submit" class="login-btn">Kayıt Ol</button>
+                <p class="login-link">
+                    Zaten hesabınız var mı? <a href="#" id="loginLink">Giriş Yap</a>
+                </p>
+                <p id="successMessage" style="display:none; color: green;">Hesabınız Başarıyla Oluşturulmuştur!</p>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const signupLink = document.getElementById('signupLink');
+            const loginLink = document.getElementById('loginLink');
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+            const signupContainer = document.querySelector('.signup-container');
+            const loginContainer = document.querySelector('.login-container');
+            const successMessage = document.getElementById('successMessage');
+
+            // Admin bilgileri
+            const adminUsername = "g231210387@sakarya.edu.tr";
+            const adminPassword = "sau";
+    
+            // Kaydol linkine tıklama
+            signupLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                loginContainer.style.display = 'none';  // Giriş formunu gizle
+                signupContainer.style.display = 'block';  // Kaydol formunu göster
+            });
+    
+            // Giriş Yap linkine tıklama
+            loginLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                signupContainer.style.display = 'none';  // Kaydol formunu gizle
+                loginContainer.style.display = 'block';  // Giriş formunu göster
+            });
+    
+            // Giriş yapma formunun submit işlemi
+            loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+             const password = document.getElementById('password').value;
+
+             if (username === adminUsername && password === adminPassword) {
+                alert("Admin Paneline Hoşgeldiniz!");
+                window.location.href = "admin.html"; // Admin paneline yönlendirme
+                return; // Diğer işlemleri durdur
+            }
+    
+           // Giriş işlemini backend'e gönder (REST API)
+    fetch('http://localhost:5282/api/account/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Başarıyla giriş yapıldı!");
+            window.location.href = "müşteri.html"; // Giriş başarılıysa yönlendirme
+        } else {
+            alert(data.message || "Kullanıcı adı veya şifre hatalı!");
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+
+    
+signupForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const newUsername = document.getElementById('newUsername').value;
+    const newPassword = document.getElementById('newPassword').value;
+
+    // Kullanıcıyı veritabanına kaydetme işlemi
+    fetch('http://localhost:5282/api/account/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: newUsername,
+            password: newPassword
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            successMessage.style.display = 'block';  // Başarı mesajını göster
+            setTimeout(function () {
+                loginContainer.style.display = 'block';
+                signupContainer.style.display = 'none';
+            }, 2000);  // 2 saniye sonra giriş formuna dön
+        } else {
+            alert('Kayıt sırasında hata oluştu.');
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+
+
+
+        });
+
+        
+    </script>
+    
+    
+</body>
+</html>
