@@ -1,0 +1,14 @@
+﻿# .NET Core
+bin/
+obj/
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Core
+wwwroot/
