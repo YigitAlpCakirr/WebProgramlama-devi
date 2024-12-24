@@ -5,12 +5,184 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\sign.in.css",
+      "PackagePath": "staticwebassets\\css\\sign.in.css"
+    },
+    {
       "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\tailwind.css",
+      "PackagePath": "staticwebassets\\css\\tailwind.css"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\tooplate-antique-cafe.css",
+      "PackagePath": "staticwebassets\\css\\tooplate-antique-cafe.css"
+    },
+    {
       "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\asker-tıraşı.jpg",
+      "PackagePath": "staticwebassets\\img\\asker-tıraşı.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\bg1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\boyaharichersey.jpg",
+      "PackagePath": "staticwebassets\\img\\boyaharichersey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\boyamak.jpg",
+      "PackagePath": "staticwebassets\\img\\boyamak.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\damat-tıraşı.jpg",
+      "PackagePath": "staticwebassets\\img\\damat-tıraşı.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\icon1.png",
+      "PackagePath": "staticwebassets\\img\\icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\icon2.png",
+      "PackagePath": "staticwebassets\\img\\icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\icon3.png",
+      "PackagePath": "staticwebassets\\img\\icon3.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaforfoto2.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaforfoto2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaförfoto1.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaförfoto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaförfoto3.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaförfoto3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaförfoto4.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaförfoto4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaförfoto6.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaförfoto6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\kuaförfoto7.jpg",
+      "PackagePath": "staticwebassets\\img\\kuaförfoto7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\sac+sakal.jpg",
+      "PackagePath": "staticwebassets\\img\\sac+sakal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\sac-bakimi.jpg",
+      "PackagePath": "staticwebassets\\img\\sac-bakimi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\sac-kesimi.jpg",
+      "PackagePath": "staticwebassets\\img\\sac-kesimi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\sac-yıkatma.jpg",
+      "PackagePath": "staticwebassets\\img\\sac-yıkatma.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\img\\sakal-tirasi.jpg",
+      "PackagePath": "staticwebassets\\img\\sakal-tirasi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\jquery.singlePageNav.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.singlePageNav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\parallax.min.js",
+      "PackagePath": "staticwebassets\\js\\parallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\sepet.js",
+      "PackagePath": "staticwebassets\\js\\sepet.js"
     },
     {
       "Id": "C:\\Users\\Excalibur\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",

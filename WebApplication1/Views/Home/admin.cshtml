@@ -1,5 +1,5 @@
-﻿@{
-    Layout = null; 
+@{
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="~/css/tailwind.css">
     <link rel="stylesheet" href="~/css/tooplate-antique-cafe.css">
-
+    
 
 </head>
-<body>
+<body>    
     <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/kuaförfoto1.jpg">
         <nav id="tm-nav" class="fixed w-full">
             <div class="tm-container mx-auto px-2 md:py-6 text-right">
@@ -29,41 +29,41 @@
                     <li class="inline-block mb-4 mx-5"><a href="#ekip" class="tm-text-gold py-1 md:py-3 px-4"><i class="fa-solid fa-user"></i> Çalışanlarımız</a></li>
                     <li class="inline-block mb-4 mx-5"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4"><i class="fa-solid fa-circle-info"></i> Hakkımızda</a></li>
                     <li class="inline-block mb-4 mx-5"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4"><i class="fa-solid fa-phone"></i> İletişim</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#sepet" class="tm-text-gold py-1 md:py-3 px-4"><i class="fa-solid fa-cart-shopping"></i>Sepet</a></li>
                 </ul>
                 <div class="navbar">
-                    <a href="@Url.Action("Login", "Home")" class="login-btn">Giriş Yap</a>
-                </div>
-            </div>
+                    <a href="index.html" class="login-btn">Çıkış Yap</a>
+                  </div>
+            </div>           
         </nav>
         <div class="container mx-auto px-2 tm-intro-width">
             <div class="sm:pb-60 sm:pt-48 py-20">
                 <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
                     <h1 class="text-white text-5xl tm-logo-font mb-5">YC HairStyle</h1>
                     <p class="tm-text-gold tm-text-2xl"></p>
-                </div>
+                </div>    
                 <div class="bg-black bg-opacity-80 p-10 mb-5">
                     <p class="text-white leading-8 text-sm font-light">
-                        Merhabalar, YC HairStyle'a hoşgeldiniz. Burada sizin için hizmetlerimiz , çalışanlarımız ve bizler hakkında
-                        merak ettiklerinizi bulabilirsiniz. Ayrıca randevu sistemimiz sayesinde talep ettiğiniz hizmetlerimizi ve istediğiniz
-                        kuaförümüzü seçerek bir randevu oluşturabilirsiniz.
-                    </p>
+                       Merhabalar, YC HairStyle'a hoşgeldiniz. Burada sizin için hizmetlerimiz , çalışanlarımız ve bizler hakkında 
+                    merak ettiklerinizi bulabilirsiniz. Ayrıca randevu sistemimiz sayesinde talep ettiğiniz hizmetlerimizi ve istediğiniz
+                    kuaförümüzü seçerek bir randevu oluşturabilirsiniz.</p>
                 </div>
                 <div class="text-center">
                     <div class="inline-block">
                         <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
                             <i class="fa-solid fa-scissors mr-3"></i>
-                            <span>Sizin için yapabileceklerimiz...</span>
+                            <span>Sizin için yapabileceklerimiz...</span>                    
                         </a>
-                    </div>
-                </div>
+                    </div>                    
+                </div>                
             </div>
-        </div>
+        </div>        
     </div>
     <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/kuaförfoto3.jpg">
         <div class="container mx-auto tm-container py-24 sm:py-48">
             <div class="text-center mb-16">
                 <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Hizmetlerimiz</h2>
-            </div>
+            </div>            
             <div class="flex flex-col lg:flex-row justify-around items-center">
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="flex items-start mb-6 tm-menu-item">
@@ -71,22 +71,21 @@
                         <div class="ml-3 sm:ml-6">
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Saç Kesimi</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">750TL</div>
-                            <a href="#sepet" class="simge-link add-to-cart"
-                               data-name="Saç Kesimi"
+                            <a href="#sepet" class="simge-link add-to-cart" 
+                               data-name="Saç Kesimi" 
                                data-price="750">
                                 <i class="fa-solid fa-square-plus"></i>
                             </a>
-                        </div>
-                    </div>
+                        </div>                    
+                    </div>                    
                     <div class="flex items-start mb-6 tm-menu-item">
                         <img src="~/img/sakal-tirasi.jpg" width="200" alt="Image" class="rounded-md">
                         <div class="ml-3 sm:ml-6">
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Sakal Kesimi</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">150TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Sakal Kesimi" data-price="150">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
-                        </div>
+                                <i class="fa-solid fa-square-plus"></i></a>
+                        </div>                    
                     </div>
                     <div class="flex items-start mb-6 tm-menu-item">
                         <img src="~/img/sac-bakimi.jpg" width="200" alt="Image" class="rounded-md">
@@ -94,9 +93,8 @@
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Saç Bakımı</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">250TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Sakal Bakımı" data-price="250">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
-                        </div>
+                                <i class="fa-solid fa-square-plus"></i></a>
+                        </div>                    
                     </div>
                     <div class="flex items-start mb-6 tm-menu-item">
                         <img src="~/img/sac-yıkatma.jpg" width="200" alt="Image" class="rounded-md">
@@ -104,9 +102,8 @@
                             <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Saç Yıkama</h3>
                             <div class="text-white text-md sm:text-lg font-light">75TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Sa Yıkama" data-price="75">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
-                        </div>
+                                <i class="fa-solid fa-square-plus"></i></a>
+                        </div>                    
                     </div>
                 </div>
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
@@ -115,8 +112,7 @@
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Damat Tıraşı</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">350TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Damat Tıraşı" data-price="350">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
+                                <i class="fa-solid fa-square-plus"></i></a>
                         </div>
                         <img src="~/img/damat-tıraşı.jpg" width="200" alt="Image" class="rounded-md">
                     </div>
@@ -125,8 +121,7 @@
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Saç Boyatmak</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">500TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Saç Boyatmak" data-price="500">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
+                                <i class="fa-solid fa-square-plus"></i></a>
                         </div>
                         <img src="~/img/boyamak.jpg" width="200" alt="Image" class="rounded-md">
                     </div>
@@ -135,54 +130,52 @@
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Saç + Sakal Kesimi</h3>
                             <div class="text-white text-md sm:text-lg font-light mb-1">800TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Saç + Sakal Kesimi" data-price="800">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
-                        </div>
+                                <i class="fa-solid fa-square-plus"></i></a>
+                        </div>   
                         <img src="~/img/sac+sakal.jpg" width="200" alt="Image" class="rounded-md">
                     </div>
-                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">                    
                         <div class="text-right mr-6">
                             <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Full+Full (Boya Hariç)</h3>
                             <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow"></h3>
                             <div class="text-white text-md sm:text-lg font-light">Fiyat 1100TL</div>
                             <a href="#sepet" class="simge-link add-to-cart" data-name="Full+Full (Boya Hariç)" data-price="1100">
-                                <i class="fa-solid fa-square-plus"></i>
-                            </a>
-                        </div>
+                            <i class="fa-solid fa-square-plus"></i></a>
+                        </div> 
                         <img src="~/img/boyaharichersey.jpg" width="200" alt="Image" class="rounded-md">
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
     <div id="ekip" class="parallax-window" data-parallax="scroll" data-image-src="img/kuaförfoto4.jpg">
         <div class="container mx-auto tm-container py-24 sm:py-48">
-
+            
             <h3 id="ekiph3" class="ekiph3 px-12">Çalışanlarımız</h3>
-            <div class="sutun-sol-sag ">
+                <div class="sutun-sol-sag ">
                 <img src="~/img/icon1.png" alt="" class="img-fluid oval bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
-                <h4 class="ekipisim">Ahmet Çelik </h4>
+                <h4 class="ekipisim">Ahmet Çelik </h4>     
                 <p class="ekipp">
-                    Prof. Saç Kesim Uzmanı
+                      Prof. Saç Kesim Uzmanı
                 </p>
-            </div>
-            <div class="sutun-sol-sag ">
+                </div>
+                <div class="sutun-sol-sag ">
                 <img src="~/img/icon2.png" alt="" class="img-fluid oval bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
-                <h4 class="ekipisim">Yiğit Çakır </h4>
+                <h4 class="ekipisim">Yiğit Çakır </h4>     
                 <p class="ekipp">
                     Prof. Saç Bakım Uzmanı
                 </p>
-            </div>
-            <div class="sutun-sol-sag">
+                </div>
+                <div class="sutun-sol-sag">
                 <img src="~/img/icon3.png" alt="" class="img-fluid oval bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
-                <h4 class="ekipisim">Emre Ağaç</h4>
+                <h4 class="ekipisim">Emre Ağaç</h4>     
                 <p class="ekipp">
                     Prof. Saç Kesim Uzmanı
                 </p>
-            </div>
-
-
-        </div>
+                </div>
+                
+            
+        </div>        
     </div>
     <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/kuaförfoto7.jpg">
         <div class="container mx-auto tm-container py-24 sm:py-48">
@@ -190,21 +183,20 @@
                 <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
                     <h2 class="mb-6 tm-text-green text-4xl font-medium">Hakkımızda</h2>
                     <p class="mb-6 text-base leading-8">
-
-                    </p>
-                    <p class="text-base leading-8 pclass">
-                        Her zaman size en iyi şekilde hizmet etmeye çalışan YC HairStyle ailesi
+                        
+                  </p>
+                    <p class="text-base leading-8 pclass" > Her zaman size en iyi şekilde hizmet etmeye çalışan YC HairStyle ailesi 
                         2020'de kuruldu. Çalışanlar olarak kadromuz 3 kişiden oluşmaktadır. Şuanda sadece tek şubemiz vardır o da Sakarya/Serdivan'dadır.
-                        Sizlere hizmet ettiğimiz bu yolda kendimizi her zaman geliştirmeye ve ekip olarak büyümeye çalışıyoruz.
-                        Unutmayın ! Sizlerin mutluluğu bizlerin mutluluğu.
-                    </p>
+                        Sizlere hizmet ettiğimiz bu yolda kendimizi her zaman geliştirmeye ve ekip olarak büyümeye çalışıyoruz.      
+                        Unutmayın ! Sizlerin mutluluğu bizlerin mutluluğu. 
+                        </p>
                 </div>
                 <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
                     <i class="far fa-comments mr-4"></i>
                     İletişim
                 </a>
-            </div>
-        </div>
+            </div>           
+        </div>        
     </div>
     <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="img/kuaförfoto6.jpg">
         <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
@@ -213,18 +205,18 @@
                     <h2 class="text-3xl mb-6 tm-text-green">Bizimle İletişime Geçin</h2>
                     <p class="mb-6 text-lg leading-8">
                         Bizimle merak ettiğiniz şeyleri mesaj göndererek ya da bizleri arayarak sorabilirsiniz. İletişim
-                        bilgilerimiz ve konumumuz aşağıda belirtilmiştir.
+                        bilgilerimiz ve konumumuz aşağıda belirtilmiştir.   
                     </p>
                     <p class="mb-10 text-lg">
                         <span class="block mb-2">Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition">0555 555 5555</a></span>
-                        <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition">info@YChairstyle.com</a></span>
+                        <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition">info@YChairstyle.com</a></span>                        
                     </p>
                     <div class="text-center">
                         <a href="https://www.google.com/maps" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
                             <i class="fas fa-map-marked-alt mr-8"></i>
                             Haritada Aç
                         </a>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
                     <form action="" method="POST" class="text-lg">
@@ -233,8 +225,48 @@
                         <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Mesajınız..." required=""></textarea>
                         <div class="text-right">
                             <button type="submit" class="text-white hover:text-yellow-500 transition">Gönder</button>
+                        </div>                        
+                      </form>
+                </div>
+            </div>
+        </div>        
+    </div>  
+    <div id="sepet" class="parallax-window relative" data-parallax="scroll" data-image-src="img/kuaförfoto6.jpg">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <div class="sepet-container">
+                        <h2 class="text-2xl font-bold mb-4">Sepetiniz</h2>
+                        <!-- Sepet ürünlerinin ekleneceği alan -->
+                        <div class="sepet-urunler">
+                            <!-- Dinamik ürünler buraya eklenecek -->
                         </div>
-                    </form>
+    
+                        <!-- Tarih ve saat seçimi -->
+                        <div class="sepet-footer mt-6">
+                            <div class="flex flex-col mb-4">
+                                <label for="tarih" class="font-semibold">Teslimat Tarihi:</label>
+                                <input type="date" id="tarih" name="tarih" class="px-4 py-2 rounded-md border border-gray-300">
+                            </div>
+                            <div class="flex flex-col mb-4">
+                                <label for="saat" class="font-semibold">Teslimat Saati:</label>
+                                <select id="saat" class="px-4 py-2 rounded-md border border-gray-300">
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+    
+                            <button class="sepet-button bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600">Satın Al</button>
+                            <span class="total-price text-lg font-semibold ml-4">Toplam: ₺0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,21 +274,23 @@
 
     <script>
         document.querySelector('.login-btn').addEventListener('click', function (e) {
-        window.location.href = '@Url.Action("Login", "Account")'; 
+          window.location.href = 'index.html';
         });
-    </script>
-
-
+      </script>
+      
 
     <script src="~/js/jquery-3.6.0.min.js"></script>
     <script src="~/js/parallax.min.js"></script>
     <script src="~/js/jquery.singlePageNav.min.js"></script>
+    <script src="~/js/sepet.js"></script>
     <script src="~/js/login.js"></script>
     <script>
 
+
+
         function checkAndShowHideMenu() {
             if(window.innerWidth < 768) {
-                $('#tm-nav ul').addClass('hidden');
+                $('#tm-nav ul').addClass('hidden');                
             } else {
                 $('#tm-nav ul').removeClass('hidden');
             }
@@ -276,7 +310,7 @@
             $('#tm-nav ul li').click(function(){
                 if(window.innerWidth < 768) {
                     $('#tm-nav ul').addClass('hidden');
-                }
+                }                
             });
 
             $(document).scroll(function() {
@@ -288,7 +322,7 @@
                     tmNav.removeClass('scroll');
                 }
             });
-
+            
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();

@@ -170,3 +170,4 @@ C:\Users\Excalibur\source\repos\WebApplication1\WebApplication1\bin\Debug\net8.0
 C:\Users\Excalibur\source\repos\WebApplication1\WebApplication1\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Excalibur\source\repos\WebApplication1\WebApplication1\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Excalibur\source\repos\WebApplication1\WebApplication1\bin\Debug\net8.0\launchSettings.json
+C:\Users\Excalibur\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
