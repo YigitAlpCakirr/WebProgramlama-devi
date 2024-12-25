@@ -242,9 +242,11 @@
 
     <script>
         document.querySelector('.login-btn').addEventListener('click', function (e) {
-        window.location.href = '@Url.Action("Login", "Account")'; 
+            e.preventDefault(); // Tarayıcıdaki varsayılan davranışı engelle
+            window.location.href = '@Url.Action("Login", "Home")';
         });
     </script>
+
 
 
 

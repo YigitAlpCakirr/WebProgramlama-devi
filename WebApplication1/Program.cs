@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Data;  // ApplicationDbContext'in bulunduðu namespace
+using WebApplication1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,14 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader();
     });
 });
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Home/Login";  // Giriþ yolu
+        options.AccessDeniedPath = "/Home/Login"; // Eriþim engellendiðinde yönlendirilecek sayfa
+    });
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -37,6 +47,9 @@ app.UseRouting();
 
 // CORS'u kullanma
 app.UseCors("AllowAll");
+
+// Kimlik doðrulama iþlemi
+app.UseAuthentication();
 
 app.UseAuthorization();
 

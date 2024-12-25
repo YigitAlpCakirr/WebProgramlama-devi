@@ -1,4 +1,4 @@
-@{
+﻿@{
     Layout = null;
 }
 
@@ -25,7 +25,7 @@
                     <input type="password" id="password" name="password" placeholder="Şifrenizi girin" required>
                 </div>
                 <button type="submit" class="login-btn">Giriş Yap</button>
-                <button type="button" class="login-btn" onclick="window.location.href='@Url.Action("Index", "Home")';">Anasayfa'ya Geri Dön</button>
+                <button type="button" class="login-btn" onclick="window.location.href='@Url.Action("Index", "Home")';">Anasayfaya Geri Dön</button>
                 <p class="signup-link">
                     Hesabınız yok mu? <a href="#" id="signupLink">Kayıt Ol</a>
                 </p>
@@ -54,6 +54,7 @@
             </form>
         </div>
     </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -91,8 +92,9 @@
 
                 if (username === adminUsername && password === adminPassword) {
                     alert("Admin Paneline Hoşgeldiniz!");
-                    window.location.href = "/admin"; // Admin paneline yönlendirme
-                    return; // Diğer işlemleri durdur
+                    window.location.href = "/Home/Admin"; // Doğru rota
+                } else {
+                    alert("Geçersiz kullanıcı adı veya şifre!");
                 }
 
                 // Giriş işlemini backend'e gönder (REST API)
@@ -110,13 +112,15 @@
                     .then(data => {
                         if (data.success) {
                             alert("Başarıyla giriş yapıldı!");
-                            window.location.href = "/müşteri"; // Giriş başarılıysa yönlendirme
+                            window.location.href = "müşteri.html"; // Giriş başarılıysa yönlendirme
                         } else {
-                            alert(data.message || "Kullanıcı adı veya şifre hatalı!");
+                            alert(data.message || "Kullanıcı adı veya şifreniz hatalı!");
                         }
                     })
                     .catch(error => console.error('Error:', error));
             });
+
+
 
             signupForm.addEventListener('submit', function (e) {
                 e.preventDefault();
@@ -148,7 +152,15 @@
                     })
                     .catch(error => console.error('Error:', error));
             });
+
+
+
+
         });
+
+
     </script>
+
+
 </body>
 </html>

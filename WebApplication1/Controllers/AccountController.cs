@@ -55,4 +55,5 @@ namespace WebApplication1.Controllers
             return Ok(new { success = true, message = "Giriş başarılı!" });
         }
     }
+
 }
